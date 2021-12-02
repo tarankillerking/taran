@@ -5,7 +5,7 @@ player_x=10
 player_y=10
 var playerobject=""
 var blockimgobject=""
-function playerobject(){
+function playername(){
 fabric.Image.fromURL("player.png",function(Img){
     playerobject=Img;
     playerobject.scaleToWidth(150)
@@ -93,27 +93,27 @@ document.getElementById("currentheight") .innerHTML=blockimg_height
       if (player_y>0) {
        player_y=player_y-blockimg_height
        canvas.remove(playerobject)
-       playerobject()   
+       playername()   
       }  
     }  
     function down() {
         if (player_y<450) {
          player_y=player_y+blockimg_height
          canvas.remove(playerobject)
-         playerobject()   
+         playername()   
         }  
       }  
       function right() {
         if (player_x<900) {
          player_x=player_x+blockimg_width
          canvas.remove(playerobject)
-         playerobject()   
+         playername()   
         }  
       } 
       function left() {
         if (player_x>0) {
          player_x=player_x-blockimg_width
          canvas.remove(playerobject)
-         playerobject()   
+         playername()   
         }  
       } 
